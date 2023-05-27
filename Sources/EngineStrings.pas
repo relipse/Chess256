@@ -57,6 +57,13 @@ const
     EngineDefExt = '';
     {$DEFINE HAS_ENGINE_NAME}
   {$ENDIF}
+  {$IFDEF DARWIN}
+    EngineName1 = '/Users/tearsfornations/util/lazarus/Chess256/Stockfish/stockfish';
+    EngineName2 = '/Users/tearsfornations/util/lazarus/Chess256/Stockfish/stockfish';
+    EngineFilter = '*';
+    EngineDefExt = '';
+    {$DEFINE HAS_ENGINE_NAME}
+  {$ENDIF}
   {$IFNDEF HAS_ENGINE_NAME}
     {$ERROR Please add nessesary constants for this platform.}
   {$ENDIF}
