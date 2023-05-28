@@ -58,8 +58,9 @@ const
     {$DEFINE HAS_ENGINE_NAME}
   {$ENDIF}
   {$IFDEF DARWIN}
-    EngineName1 = '/Users/tearsfornations/util/lazarus/Chess256/Stockfish/stockfish';
-    EngineName2 = '/Users/tearsfornations/util/lazarus/Chess256/Stockfish/stockfish';
+    { https://formulae.brew.sh/formula/stockfish }
+    EngineName1 = '/opt/homebrew/bin/stockfish';
+    EngineName2 = '/opt/homebrew/bin/stockfish';
     EngineFilter = '*';
     EngineDefExt = '';
     {$DEFINE HAS_ENGINE_NAME}
